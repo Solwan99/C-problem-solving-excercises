@@ -1,0 +1,15 @@
+21:38:18 **** Incremental Build of configuration Debug for project P15 ****
+make all 
+Building file: ../P15.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"P15.d" -MT"P15.o" -o "P15.o" "../P15.c"
+Finished building: ../P15.c
+ 
+Building target: P15.exe
+Invoking: Cygwin C Linker
+gcc  -o "P15.exe" ./P15.o   
+Finished building target: P15.exe
+ 
+
+21:38:19 Build Finished. 0 errors, 0 warnings. (took 791ms)
+

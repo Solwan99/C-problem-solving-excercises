@@ -1,0 +1,36 @@
+03:12:27 **** Incremental Build of configuration Debug for project avr ****
+make all 
+Building file: ../avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"avr.d" -MT"avr.o" -c -o "avr.o" "../avr.c"
+In file included from ../avr.c:9:
+e:/embeddedsystemsdiploma/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../avr.c
+ 
+Building target: avr.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,avr.map -mmcu=atmega16 -o "avr.elf" ./avr.o   
+Finished building target: avr.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S avr.elf  >"avr.lss"
+Finished building: avr.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 avr.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    3492 bytes (21.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+03:12:28 Build Finished. 0 errors, 1 warnings. (took 1s.171ms)
+

@@ -1,0 +1,22 @@
+01:56:09 **** Incremental Build of configuration Debug for project hhh ****
+make all 
+Building file: ../n.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"n.d" -MT"n.o" -o "n.o" "../n.c"
+../n.c: In function 'main':
+../n.c:27:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   27 |  printf("Size of Union family_name is : %d \n",sizeof(union family_name));
+      |                                         ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                          |     |
+      |                                          int   long unsigned int
+      |                                         %ld
+Finished building: ../n.c
+ 
+Building target: hhh.exe
+Invoking: Cygwin C Linker
+gcc  -o "hhh.exe" ./n.o   
+Finished building target: hhh.exe
+ 
+01:56:57 **** Incremental Build of configuration Debug for project hhh ****
+make all 
+make: Nothing to be done for 'all'.

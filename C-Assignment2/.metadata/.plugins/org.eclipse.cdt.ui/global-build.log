@@ -1,0 +1,15 @@
+11:57:32 **** Incremental Build of configuration Debug for project P17 ****
+make all 
+Building file: ../P17.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"P17.d" -MT"P17.o" -o "P17.o" "../P17.c"
+Finished building: ../P17.c
+ 
+Building target: P17.exe
+Invoking: Cygwin C Linker
+gcc  -o "P17.exe" ./P17.o   
+Finished building target: P17.exe
+ 
+11:57:35 **** Incremental Build of configuration Debug for project P17 ****
+make all 
+make: Nothing to be done for 'all'.

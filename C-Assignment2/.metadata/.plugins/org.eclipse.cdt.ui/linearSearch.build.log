@@ -1,0 +1,15 @@
+14:36:31 **** Incremental Build of configuration Debug for project linearSearch ****
+make all 
+Building file: ../Search.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Search.d" -MT"Search.o" -o "Search.o" "../Search.c"
+Finished building: ../Search.c
+ 
+Building target: linearSearch.exe
+Invoking: Cygwin C Linker
+gcc  -o "linearSearch.exe" ./Search.o   
+Finished building target: linearSearch.exe
+ 
+
+14:36:32 Build Finished. 0 errors, 0 warnings. (took 1s.59ms)
+

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include<string.h>
+#define TRUE 1
+#define FALSE 0
+
+char checkRepeatedChar(char string[]);
+
+int main (void){
+	return 0;
+}

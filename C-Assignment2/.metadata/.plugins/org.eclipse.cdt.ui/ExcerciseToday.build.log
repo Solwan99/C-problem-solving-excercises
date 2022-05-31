@@ -1,0 +1,15 @@
+13:18:02 **** Incremental Build of configuration Debug for project ExcerciseToday ****
+make all 
+Building file: ../Array.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Array.d" -MT"Array.o" -o "Array.o" "../Array.c"
+Finished building: ../Array.c
+ 
+Building target: ExcerciseToday.exe
+Invoking: Cygwin C Linker
+gcc  -o "ExcerciseToday.exe" ./Array.o   
+Finished building target: ExcerciseToday.exe
+ 
+
+13:18:04 Build Finished. 0 errors, 0 warnings. (took 1s.357ms)
+

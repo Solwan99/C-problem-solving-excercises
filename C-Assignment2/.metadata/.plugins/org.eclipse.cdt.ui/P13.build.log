@@ -1,0 +1,7 @@
+21:04:27 **** Clean-only build of configuration Debug for project P13 ****
+make clean 
+rm -rf ./P13.o ./P13.d  P13.exe
+ 
+
+21:04:28 Build Finished. 0 errors, 0 warnings. (took 317ms)
+

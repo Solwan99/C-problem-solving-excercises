@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include<string.h>
+#define TRUE 1
+#define FALSE 0
+
+char checkRepeatedChar(char string[]);
+
+int main (void){
+
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+
+	if(checkRepeatedChar("aa")==1){
+		printf("TRUE");
+	}
+	else{
+		printf("FALSE");
+	}
+
+	return 0;
+}
+
+char checkRepeatedChar(char string[]){
+
+	char counter,check=0;
+	for(counter=0;counter<strlen(string);counter++)
+	{
+		if(string[counter]==string[counter+1]){
+			check++;
+		}
+	}
+
+	if(check==0){
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}

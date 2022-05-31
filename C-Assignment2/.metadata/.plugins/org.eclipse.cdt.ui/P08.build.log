@@ -1,0 +1,19 @@
+23:15:34 **** Build of configuration Debug for project P08 ****
+make all 
+Building file: ../P08.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"P08.d" -MT"P08.o" -o "P08.o" "../P08.c"
+Finished building: ../P08.c
+ 
+Building target: P08.exe
+Invoking: Cygwin C Linker
+gcc  -o "P08.exe" ./P08.o   
+/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../x86_64-pc-cygwin/bin/ld: /usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/libcygwin.a(libcmain.o): in function `main':
+/usr/src/debug/cygwin-3.1.7-1/winsup/cygwin/lib/libcmain.c:37: undefined reference to `WinMain'
+/usr/src/debug/cygwin-3.1.7-1/winsup/cygwin/lib/libcmain.c:37:(.text.startup+0x82): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `WinMain'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:42: P08.exe] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+23:15:35 Build Failed. 4 errors, 0 warnings. (took 673ms)
+

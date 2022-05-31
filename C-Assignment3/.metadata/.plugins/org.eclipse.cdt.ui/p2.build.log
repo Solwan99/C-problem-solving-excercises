@@ -1,0 +1,7 @@
+22:48:44 **** Clean-only build of configuration Debug for project p2 ****
+make clean 
+rm -rf ./p2.o ./p2.d  p2.exe
+ 
+
+22:48:45 Build Finished. 0 errors, 0 warnings. (took 806ms)
+

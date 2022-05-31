@@ -1,0 +1,16 @@
+22:36:54 **** Build of configuration Debug for project AVR ****
+make all 
+Building file: ../AVR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"AVR.d" -MT"AVR.o" -c -o "AVR.o" "../AVR.c"
+Finished building: ../AVR.c
+ 
+Building target: AVR.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR.map -mmcu=atmega16 -o "AVR.elf" ./AVR.o   
+e:/embeddedsystemsdiploma/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [makefile:57: AVR.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:36:55 Build Failed. 2 errors, 0 warnings. (took 1s.77ms)
+

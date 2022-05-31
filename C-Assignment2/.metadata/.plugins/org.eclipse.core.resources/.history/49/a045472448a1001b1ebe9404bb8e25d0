@@ -1,0 +1,36 @@
+/*Write a C function to count the number of 1’s in an unsigned 32-bit integer.*/
+
+#include <stdio.h>
+int countBinaryOnes(unsigned int);
+
+int main(void){
+	setvbuf(stdout,NULL,_IONBF,0);
+	setvbuf(stderr,NULL,_IONBF,0);
+	printf("%d",countBinaryOnes(1015));
+}
+
+/* example: decimal unsigned integer number 1015 is written as 0000 0000 0000 0000 0000 0011 1111 0111
+ * bit wise AND with mask 0000 0000 0000 0000 0000 0000 0000 0001 will be as follows:
+ * 		0000 0000 0000 0000 0000 0011 1111 0111
+ * &	0000 0000 0000 0000 0000 0000 0000 0001
+ * -------------------------------------------------
+ * 		0000 0000 0000 0000 0000 0000 0000 0001
+ * */
+
+
+
+int countBinaryOnes(unsigned int checkInteger)
+{
+	int onesCount=0,bitNum;
+
+	unsigned int maskingNum=1;    			//masking variable 0000 0000 0000 0000 0000 0000 0000 0001
+
+	for(bitNum=0;bitNum<32;bitNum++)		//to loop on the number from bit 0 to bit 31
+	{
+		if((checkInteger>>bitNum)&maskingNum)	//bit wise AND with 1 to return 1 if the bit value was 1
+			{
+				onesCount++;					//if the cond. is true, then we increase the number of ones
+			}
+	}
+	return onesCount;
+}

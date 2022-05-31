@@ -1,0 +1,7 @@
+23:37:06 **** Clean-only build of configuration Debug for project P09 ****
+make clean 
+rm -rf ./P09.o ./P09.d  P09.exe
+ 
+
+23:37:06 Build Finished. 0 errors, 0 warnings. (took 230ms)
+

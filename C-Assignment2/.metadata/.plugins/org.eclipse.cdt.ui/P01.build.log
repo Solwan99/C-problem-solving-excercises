@@ -1,0 +1,15 @@
+22:01:26 **** Incremental Build of configuration Debug for project P01 ****
+make all 
+Building file: ../P01.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"P01.d" -MT"P01.o" -o "P01.o" "../P01.c"
+Finished building: ../P01.c
+ 
+Building target: P01.exe
+Invoking: Cygwin C Linker
+gcc  -o "P01.exe" ./P01.o   
+Finished building target: P01.exe
+ 
+
+22:01:27 Build Finished. 0 errors, 0 warnings. (took 970ms)
+

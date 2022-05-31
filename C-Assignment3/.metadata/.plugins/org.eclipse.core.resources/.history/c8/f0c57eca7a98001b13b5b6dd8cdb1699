@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<string.h>
+#define TRUE 1
+#define FALSE 0
+
+char checkRepeatedChar(char string[]);
+
+int main (void){
+
+
+	return 0;
+}
+
+char checkRepeatedChar(char string[]){
+
+	char counter;
+	for(counter=0;counter<strlen(string);counter++)
+	{
+		if((strcmp((string+counter),(string+counter+1)))!=0)
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+}

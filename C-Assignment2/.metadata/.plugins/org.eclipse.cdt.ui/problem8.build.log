@@ -1,0 +1,18 @@
+23:18:19 **** Incremental Build of configuration Debug for project problem8 ****
+make all 
+Building file: ../problem8.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"problem8.d" -MT"problem8.o" -o "problem8.o" "../problem8.c"
+../problem8.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+    3 | void main(void){
+      |      ^~~~
+Finished building: ../problem8.c
+ 
+Building target: problem8.exe
+Invoking: Cygwin C Linker
+gcc  -o "problem8.exe" ./problem8.o   
+Finished building target: problem8.exe
+ 
+
+23:18:20 Build Finished. 0 errors, 1 warnings. (took 777ms)
+

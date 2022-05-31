@@ -1,0 +1,25 @@
+/*Write a C function to count the number of 1’s in an unsigned 32-bit integer.*/
+
+#include <stdio.h>
+int countBinaryOnes(unsigned int);
+
+int main(void){
+	setvbuf(stdout,NULL,_IONBF,0);
+	setvbuf(stderr,NULL,_IONBF,0);
+	printf("%d",countBinaryOnes(5));
+}
+
+
+int countBinaryOnes(unsigned int checkInteger)
+{
+	int onesCount=0,bitNum;
+
+	for(bitNum=0;bitNum<32;bitNum++)
+	{
+		if(checkInteger&=(1<<bitNum))
+			{
+				onesCount++;
+			}
+	}
+	return onesCount;
+}

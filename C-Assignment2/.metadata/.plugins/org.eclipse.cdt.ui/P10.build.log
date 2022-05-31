@@ -1,0 +1,7 @@
+23:55:38 **** Clean-only build of configuration Debug for project P10 ****
+make clean 
+rm -rf ./P10.o ./P10.d  P10.exe
+ 
+
+23:55:38 Build Finished. 0 errors, 0 warnings. (took 169ms)
+
